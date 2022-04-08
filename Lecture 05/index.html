@@ -4,57 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Hanoi.css">
+
     <title>하노이의 탑</title>
 </head>
 <body>
     <p>하노이의 탑</p>
-    <input id="button_reset" type="button" value="초기화">
-    <div style="position: absolute; 
-                left: 100px; 
-                top: 100px; 
-                width: 300px; 
-                height: 450px;
-                border: 3px solid red;
-                text-align: center;">
-        <p style="color:red;">
-            &block; &block; &block; &block; &block; &block; &block; &block; &block; &block; &block;
-        </p>
-        <p style="color:yellow">
-            &block; &block; &block; &block; &block; &block; &block; &block; &block; &block;
-        </p>
-        <p style="color:green">
-            &block; &block; &block; &block; &block; &block; &block; &block;
-        </p>
-        <p style="color:blue">
-            &block; &block; &block; &block; &block; &block; 
-        </p>
-        <p style="color:blueviolet">
-            &block; &block; &block;
-        </p>
-        <p style="color:black">
-            &block; 
-        </p>
+    <input id="reBtn" type="button" value="초기화" onclick="Init()">
+    <div id="redBox">
+        <p id="first"></p>
     </div>
 
-    <div style="position: absolute; 
-                left: 450px; 
-                top: 100px; 
-                width: 300px; 
-                height: 450px;
-                border: 3px solid green;
-                text-align: center;">
+    <div id="greenBox">
         <head>second</head>
         <p></p>
     </div>
 
-    <div style="position: absolute; 
-                left: 800px; 
-                top: 100px; 
-                width: 300px; 
-                height: 450px;
-                border: 3px solid blue;
-                text-align: center;">
-        <p></p>
+    <div id="blueBox">
     </div>
+    <script src="Hanoi.js"> </script>
+
 </body>
 </html>
