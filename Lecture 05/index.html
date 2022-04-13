@@ -11,16 +11,19 @@
 <body>
     <p>하노이의 탑</p>
     <input id="reBtn" type="button" value="초기화" onclick="Init()">
-    <div id="redBox">
+    <div id="redBox" onclick="ClickRedBox()">
+        <head>first</head>
         <p id="first"></p>
     </div>
 
-    <div id="greenBox">
+    <div id="greenBox" onclick="ClickGreenBox()">
         <head>second</head>
-        <p></p>
+        <p id="second"></p>
     </div>
 
-    <div id="blueBox">
+    <div id="blueBox" onclick="ClickBlueBox()">
+        <head>third</head>
+        <p id="third"></p>
     </div>
     <script src="Hanoi.js"> </script>
 
