@@ -70,9 +70,17 @@ function ClickRedBox()
         }
         else
         {
-            firstArr.push(selectArr.pop());
-            selectArr = null;
-            Draw();
+            if(firstArr.length == 0 || firstArr[firstArr.length - 1].length > selectArr[selectArr.length - 1].length)
+            {
+                firstArr.push(selectArr.pop());
+                selectArr = null;
+                Draw();
+            }
+            else
+            {
+                alert("잘못선택되었습니다")
+                selectArr = null;
+            }
         }
     }
     else
@@ -97,9 +105,17 @@ function ClickGreenBox()
         }
         else
         {
-            secondArr.push(selectArr.pop());
-            selectArr = null;
-            Draw();
+            if(secondArr.length == 0 || secondArr[secondArr.length - 1].length > selectArr[selectArr.length - 1].length)
+            {
+                secondArr.push(selectArr.pop());
+                selectArr = null;
+                Draw();
+            }
+            else
+            {
+                alert("잘못선택되었습니다")
+                selectArr = null;
+            }
         }
     }
     else
@@ -123,9 +139,17 @@ function ClickBlueBox()
         }
         else
         {
-            thirdArr.push(selectArr.pop());
-            selectArr = null;
-            Draw();
+            if(thirdArr.length == 0 || thirdArr[thirdArr.length - 1].length > selectArr[selectArr.length - 1].length)
+            {
+                thirdArr.push(selectArr.pop());
+                selectArr = null;
+                Draw();
+            }
+            else
+            {
+                alert("잘못선택되었습니다")
+                selectArr = null;
+            }
         }
     }
     else
