@@ -57,6 +57,7 @@ function Draw()
         third.appendChild(thirdArr[i]);
         third.appendChild(document.createElement('br'));
     }
+    
 }
 
 function ClickRedBox()
